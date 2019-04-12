@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="110px" viewBox="0 0 108 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>g82263</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chessGame" transform="translate(-471.000000, -20.000000)">
+            <g id="g82263" transform="translate(473.811671, 23.490000)">
+                <path d="M51.129,17.062 L51.129,0.677" id="path80321" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"></path>
+                <path d="M43.334,6.68 L58.671,6.68" id="path80323" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"></path>
+                <path d="M51.282,17.951 L51.282,0.696" id="path80300" stroke="#000000" stroke-width="5" stroke-linecap="round"></path>
+                <path d="M51.282,58.98 C51.282,58.98 65.085,35.973 60.483,26.77 C60.483,26.77 57.417,19.102 51.282,19.102 C45.147,19.102 42.08,26.77 42.08,26.77 C37.479,35.973 51.282,58.98 51.282,58.98" id="path80302" stroke="#000000" stroke-width="5" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M17.543,95.791 C34.412,106.527 65.085,106.527 81.954,95.791 L81.954,74.318 C81.954,74.318 109.559,60.514 100.357,42.109 C88.088,22.17 58.95,31.373 51.282,54.38 L51.282,65.116 L51.282,54.38 C40.547,31.373 11.408,22.171 2.206,42.109 C-6.995,60.515 17.543,72.785 17.543,72.785 L17.543,95.791 L17.543,95.791 Z" id="path80304" stroke="#000000" stroke-width="5" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M43.614,6.831 L58.95,6.831" id="path80306" stroke="#000000" stroke-width="5" stroke-linecap="round"></path>
+                <path d="M17.543,72.784 C34.412,65.115 65.085,65.115 81.954,74.318" id="path80308" stroke="#000000" stroke-width="5" stroke-linecap="round"></path>
+                <path d="M17.543,95.791 C34.412,88.122 65.085,88.122 81.954,95.791" id="path80310" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M17.543,85.054 C34.412,78.919 65.085,78.919 81.954,85.054" id="path80312" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

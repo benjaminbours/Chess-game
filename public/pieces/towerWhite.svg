@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="98px" viewBox="0 0 88 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>g3416</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chessGame" transform="translate(-1081.000000, -26.000000)" stroke="#000000" stroke-width="4.99985141">
+            <g id="g3416" transform="translate(1081.181570, 26.796400)">
+                <polygon id="path3418" fill="#FFFFFF" fill-rule="nonzero" stroke-linejoin="round" points="2.41084199 94.2169764 85.226025 94.2169764 85.226025 85.0143024 2.41084199 85.0143024"></polygon>
+                <polygon id="path3420" fill="#FFFFFF" fill-rule="nonzero" stroke-linejoin="round" points="11.612529 85.0143024 11.612529 72.7440704 76.024338 72.7440704 76.024338 85.0143024"></polygon>
+                <polyline id="path3422" fill="#FFFFFF" fill-rule="nonzero" stroke-linejoin="round" points="8.54529999 17.5280264 8.54529999 2.19023641 20.814216 2.19023641 20.814216 8.32535241 36.150361 8.32535241 36.150361 2.19023641 51.486506 2.19023641 51.486506 8.32535241 66.822651 8.32535241 66.822651 2.19023641 79.091567 2.19023641 79.091567 17.5280264"></polyline>
+                <polyline id="path3424" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="79.091567 17.5280264 69.88988 26.7307004 17.746987 26.7307004 8.54529999 17.5280264"></polyline>
+                <polyline id="path3426" fill="#FFFFFF" fill-rule="nonzero" points="69.88988 26.7307004 69.88988 65.0751754 17.746987 65.0751754 17.746987 26.7307004"></polyline>
+                <polyline id="path3428" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="69.88988 65.0751754 74.4907235 72.7440704 13.1461435 72.7440704 17.746987 65.0751754"></polyline>
+                <path d="M8.54529999,17.5280264 L79.091567,17.5280264" id="path3430" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+.case {
+    width: 60px;
+    height: 60px;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.case--black {
+    background: black;
+    color: white;
+}
+
+.case--white {
+    background: white;
+}
+
+.row {
+    display: flex;
+}
+
+.helper {
+    
+}

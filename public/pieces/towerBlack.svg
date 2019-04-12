@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="104px" viewBox="0 0 96 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>g46345</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chessGame" transform="translate(-1077.000000, -1073.000000)">
+            <g id="g46345" transform="translate(1081.353000, 1077.622000)">
+                <polygon id="path46347" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" points="0.872 94.206 86.422 94.206 86.422 84.501 0.872 84.501 0.872 93.597"></polygon>
+                <polygon id="path46349" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" points="10.751 73.526 15.856 65.438 70.687 65.438 75.793 73.526"></polygon>
+                <polygon id="path46351" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" points="10.727 86.466 10.727 73.526 76.245 73.526 76.245 86.466"></polygon>
+                <polygon id="path46353" stroke="#FFFFFF" stroke-width="10" points="16.57 65.438 16.57 23.383 69.973 23.383 69.973 65.438"></polygon>
+                <polygon id="path46355" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" points="17.464 25.258 7.252 17.171 79.971 16.992 69.759 25.08"></polygon>
+                <polygon id="path46357" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" points="7.252 15.296 7.252 0.55 21.153 0.55 21.153 7.02 35.173 7.02 35.173 0.55 53.335 0.55 53.335 7.02 65.427 7.02 65.427 0.55 79.828 0.55 79.828 15.296 7.252 15.296"></polygon>
+                <polygon id="path46359" stroke="#000000" stroke-width="1.5" fill="#000000" fill-rule="nonzero" stroke-linejoin="round" points="2.208 94.133 85.022 94.133 85.022 84.93 2.208 84.93"></polygon>
+                <polygon id="path46361" stroke="#000000" stroke-width="1.5" fill="#000000" fill-rule="nonzero" stroke-linejoin="round" points="12.943 72.659 17.544 64.99 69.687 64.99 74.289 72.659"></polygon>
+                <polygon id="path46363" stroke="#000000" stroke-width="1.5" fill="#000000" fill-rule="nonzero" stroke-linejoin="round" points="11.409 84.93 11.409 72.659 75.821 72.659 75.821 84.93"></polygon>
+                <polygon id="path46365" stroke="#000000" stroke-width="1.5" fill="#000000" fill-rule="nonzero" points="17.544 64.99 17.544 25.112 69.687 25.112 69.687 64.99"></polygon>
+                <polygon id="path46367" stroke="#000000" stroke-width="1.5" fill="#000000" fill-rule="nonzero" stroke-linejoin="round" points="17.544 25.113 8.343 17.444 78.889 17.444 69.687 25.113"></polygon>
+                <polygon id="path46369" stroke="#000000" stroke-width="1.5" fill="#000000" fill-rule="nonzero" stroke-linejoin="round" points="8.343 17.444 8.343 2.106 20.612 2.106 20.612 8.242 35.948 8.242 35.948 2.106 51.284 2.106 51.284 8.242 66.621 8.242 66.621 2.106 78.89 2.106 78.89 17.444 8.343 17.444"></polygon>
+                <polyline id="path46371" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" points="11.409 81.968 75.821 81.968 75.821 81.968"></polyline>
+                <path d="M14.477,70.055 L72.754,70.055" id="path46373" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M17.544,64.99 L69.687,64.99" id="path46375" stroke="#FFFFFF" stroke-linecap="round"></path>
+                <path d="M17.544,25.113 L69.687,25.113" id="path46377" stroke="#FFFFFF" stroke-linecap="round"></path>
+                <path d="M8.343,17.444 L78.889,17.444" id="path46379" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
