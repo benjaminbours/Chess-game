@@ -1,8 +1,11 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { isEven } from "../utils";
+import Case from "./Case";
+import { Row } from "./Row";
+import { connect } from "react-redux";
+import { AppState } from "../store";
+import { IGridState } from '../store/grid/types';
 import "./Grid.css";
-import { Piece } from "./pieces";
-import { IPieceData } from "../types";
 
 enum Colors {
     white = "white",
@@ -12,42 +15,18 @@ enum Colors {
 const coordinateX = ["a", "b", "c", "d", "e", "f", "g", "h"];
 const coordinateY = [8, 7, 6, 5, 4, 3, 2, 1];
 
-interface ICaseProps {
-    x: string;
-    y: number;
-    color: string;
-    piece: IPieceData | undefined;
+interface IStateProps {
+    grid: IGridState;
 }
 
-function Case({ x, y, color, piece }: ICaseProps) {
-    return (
-        <div className={`case case--${color}`}>
-            {`${x} ${y}`}
-            {piece &&
-                <Piece color={piece.color} type={piece.type} />
-            }
-        </div>
-    );
-}
+type Props = IStateProps;
 
-interface IRowProps {
-    children: ReactNode;
-}
+// TODO: display the possible direct with color on the grid
+export function Grid({ grid }: Props) {
+    const { pieces, possibleTarget } = grid;
 
-function Row({ children }: IRowProps) {
-    return (
-        <div className="row">
-            {children}
-        </div>
-    );
-}
+    console.log(possibleTarget);
 
-interface IGridProps {
-    state: IPieceData[];
-}
-
-export function Grid({ state }: IGridProps) {
-    console.log(state);
     return (
         <div className="grid">
             {coordinateY.map((y, i) => {
@@ -56,13 +35,9 @@ export function Grid({ state }: IGridProps) {
                     <Row key={y}>
                         {coordinateX.map((x, j) => {
                             const isXEven = isEven(j + 1);
-                            let color;
-                            if (isXEven && !isYEven || !isXEven && isYEven) {
-                                color = Colors.white;
-                            } else {
-                                color = Colors.black;
-                            }
-                            const piece = state.find((item) => item.x === x && item.y === y);
+                            const isWhite = isXEven && !isYEven || !isXEven && isYEven;
+                            const color = isWhite ? Colors.white : Colors.black;
+                            const piece = pieces.find((item) => item.x === x && item.y === y);
                             return (
                                 <Case
                                     key={`${x}${y}`}
@@ -79,3 +54,11 @@ export function Grid({ state }: IGridProps) {
         </div>
     );
 }
+
+function mapStateToProps(state: AppState): IStateProps {
+    return {
+        grid: state.grid,
+    };
+}
+
+export default connect(mapStateToProps)(Grid);

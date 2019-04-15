@@ -16,6 +16,10 @@
     background: white;
 }
 
+.case--green {
+    background: lightgreen;
+}
+
 .row {
     display: flex;
 }

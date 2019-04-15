@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import { Grid } from "./components/Grid";
-import { initialState } from "./initialState";
-import { IPieceData } from "./types";
+import { Grid } from "./components";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
-// TODO LATE: History of the game
 function App() {
-  const [state, setState] = useState<IPieceData[]>(initialState);
   return (
-    <div className="App">
-      <Grid state={state} />
-    </div>
+    <Provider store={store} >
+      <div className="App">
+        <Grid />
+      </div>
+    </Provider>
   );
 }
 
