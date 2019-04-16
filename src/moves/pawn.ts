@@ -1,17 +1,5 @@
 import { PieceDataArr, IPieceData, ICoordinate } from "../store/grid/types";
-
-const letterValue: {
-    [key: string]: () => number;
-} = {
-    a: () => 1,
-    b: () => 2,
-    c: () => 3,
-    d: () => 4,
-    e: () => 5,
-    f: () => 6,
-    g: () => 7,
-    h: () => 8,
-};
+import { letterValue } from "../utils";
 
 export function pawn(selectedPiece: IPieceData, pieces: PieceDataArr) {
     const { hasAlreadyMoved, x, y, color } = selectedPiece;

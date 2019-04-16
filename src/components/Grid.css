@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .case--black {
@@ -16,8 +17,24 @@
     background: white;
 }
 
-.case--green {
+.case--selected-piece {
     background: lightgreen;
+}
+
+.case--possible-target {
+    cursor: pointer;
+}
+
+.case--possible-target::before {
+    content: "";
+    width: 90%;
+    height: 90%;
+    border: solid 2px orange;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .row {

@@ -1,6 +1,6 @@
 import {
     IGridState,
-    IPieceData,
+    // IPieceData,
     PiecesType,
     EGridActions,
     GridActionTypes,
@@ -22,6 +22,7 @@ function createInitialPieces(): PieceDataArr {
                 color: teamColor,
                 y: teamColor === "black" ? 8 : 1,
                 hasAlreadyMoved: false,
+                index,
             };
             switch (pieceType) {
                 case pieceTypes[0]:
@@ -76,7 +77,8 @@ function createInitialPieces(): PieceDataArr {
                     y: 3,
                     color: "black",
                     type: "pawn",
-                    hasAlreadyMoved: false
+                    hasAlreadyMoved: false,
+                    index: dataArr.length,
                 });
             }
             return dataArr;
@@ -93,11 +95,12 @@ export const initialState: IGridState = {
     possibleTarget: [],
 };
 
-function calculPossibleTarget(selectedPiece: IPieceData, pieces: PieceDataArr): ICoordinate[] {
-    console.log(selectedPiece, pieces);
-    return [];
-}
+// function calculPossibleTarget(selectedPiece: IPieceData, pieces: PieceDataArr): ICoordinate[] {
+//     console.log(selectedPiece, pieces);
+//     return [];
+// }
 
+// TODO: fix bug only a bishop black move
 export function gridReducer(state = initialState, action: GridActionTypes): IGridState {
     switch (action.type) {
         case EGridActions.SET_SELECTED_PIECE:
@@ -110,6 +113,16 @@ export function gridReducer(state = initialState, action: GridActionTypes): IGri
                 ...state,
                 selectedPiece: action.payload,
                 possibleTarget,
+            };
+        case EGridActions.MOVE_PIECE:
+            // console.log(action.payload);
+            const { piece, target } = action.payload;
+            const pieces = state.pieces.slice();
+            pieces[piece.index].x = target.x;
+            pieces[piece.index].y = target.y;
+            return {
+                ...state,
+                pieces,
             };
         default:
             return state;
