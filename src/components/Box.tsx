@@ -1,25 +1,33 @@
 import React from 'react';
-import { Piece } from "./Piece";
-import { IPieceData } from "../store/pieces/types";
+// import { Piece } from "./Piece";
+// import { IPieceData } from "../store/pieces/types";
+import classNames from "classnames";
 
 interface IOwnProps {
-    className: string;
+    // className: string;
     x: string;
     y: number;
-    piece: IPieceData | undefined;
-    handleClick: () => void;
+    color: string;
+    // piece: IPieceData | undefined;
+    // handleClick: () => void;
 }
 
 type Props = IOwnProps;
 
-export function Box({ x, y, piece, className, handleClick }: Props) {
+export function Box({ x, y, color }: Props) {
+    const cssClass = classNames({
+        box: true,
+        [`box--${color}`]: true,
+        // "case--selected-piece": selectedPiece && x === selectedPiece.x && y === selectedPiece.y,
+        // "case--possible-target": isPossibleTarget,
+    });
     return (
-        <div className={className} onClick={handleClick}>
+        <div className={cssClass}>
             {/* helper */}
             {`${x} ${y}`}
-            {piece &&
+            {/* {piece &&
                 <Piece {...piece} />
-            }
+            } */}
         </div>
     );
 }

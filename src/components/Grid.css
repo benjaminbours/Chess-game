@@ -1,24 +1,4 @@
-
-
-/* .case {
-    width: 60px;
-    height: 60px;
-    border: solid black 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.case--black {
-    background: black;
-    color: white;
-}
-
-.case--white {
-    background: white;
-}
-
+/*
 .case--selected-piece {
     background: lightgreen;
 }
@@ -39,10 +19,35 @@
     transform: translate(-50%, -50%);
 }
 
-.row {
-    display: flex;
-}
 
 .helper {
     
 } */
+
+.grid {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box--black {
+    background: black;
+    color: white;
+}
+
+.box--white {
+    background: white;
+}

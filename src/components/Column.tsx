@@ -4,9 +4,9 @@ interface IRowProps {
     children: ReactNode;
 }
 
-export function Row({ children }: IRowProps) {
+export function Column({ children }: IRowProps) {
     return (
-        <div className="row">
+        <div className="column">
             {children}
         </div>
     );

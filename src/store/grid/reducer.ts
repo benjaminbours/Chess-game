@@ -8,8 +8,8 @@ const coordinateY: CoordinateY[] = [1, 2, 3, 4, 5, 6, 7, 8];
 function createInitialGrid(): BoxColumn {
     return coordinateX.reduce<BoxColumn>((xObj, x, i) => {
         const isXEven = isEven(i + 1);
-        xObj[x] = coordinateY.reduce<Boxes>((yObj, y, j) => {
-            const isYEven = isEven(y + 1);
+        xObj[x] = coordinateY.reduce<Boxes>((yObj, y) => {
+            const isYEven = isEven(y);
             const isWhite = isXEven && !isYEven || !isXEven && isYEven;
             const color = isWhite ? Colors.white : Colors.black;
             yObj[y] = { color, x, y };

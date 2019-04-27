@@ -1,11 +1,10 @@
 import "./Grid.css";
 import React from 'react';
 import { Box } from "./Box";
-import { Row } from "./Row";
+import { Column } from "./Column";
 import { connect } from "react-redux";
 import { AppState } from "../store";
 import { IPiecesState } from '../store/pieces/types';
-import classNames from "classnames";
 import { Dispatch } from "redux";
 import { setSelectedPiece, movePiece } from '../store/pieces/actions';
 import { incrementLap } from '../store/game/actions';
@@ -36,8 +35,16 @@ export function Grid({ piecesState, dispatch, setSelectedPiece, boxes, movePiece
 
     return (
         <div className="grid">
-            {Object.values(boxes).map((item) => {
-                
+            {Object.values(boxes).map((column, i) => {
+                return (
+                    <Column key={i}>
+                        {Object.values(column).slice(0).reverse().map((box, j) => {
+                            return (
+                                <Box key={`${i}${j}`} {...box}  />
+                            )
+                        })}
+                    </Column>
+                )
             })}
             {/* {coordinateY.map((y, i) => {
                 const isYEven = isEven(i);
