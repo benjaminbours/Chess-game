@@ -1,4 +1,4 @@
-import { PieceDataArr, IPieceData, ICoordinate } from "../store/grid/types";
+import { PieceDataArr, IPieceData, ICoordinate } from "../store/pieces/types";
 import { letterValue } from "../utils";
 
 export function pawn(selectedPiece: IPieceData, pieces: PieceDataArr) {

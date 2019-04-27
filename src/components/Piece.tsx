@@ -1,6 +1,6 @@
 import React from 'react';
 import { capitalizeFirstLetter } from "../utils";
-import { PiecesType } from "../store/grid/types"; 
+import { PiecesType } from "../store/pieces/types"; 
 
 interface IPieceProps {
     color: string;

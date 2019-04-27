@@ -1,6 +1,6 @@
 import React from 'react';
 import { Piece } from "./Piece";
-import { IPieceData } from "../store/grid/types";
+import { IPieceData } from "../store/pieces/types";
 
 interface IOwnProps {
     className: string;
@@ -12,7 +12,7 @@ interface IOwnProps {
 
 type Props = IOwnProps;
 
-export function Case({ x, y, piece, className, handleClick }: Props) {
+export function Box({ x, y, piece, className, handleClick }: Props) {
     return (
         <div className={className} onClick={handleClick}>
             {/* helper */}

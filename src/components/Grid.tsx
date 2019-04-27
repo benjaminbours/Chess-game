@@ -1,25 +1,23 @@
+import "./Grid.css";
 import React from 'react';
-import { isEven } from "../utils";
-import { Case } from "./Case";
+import { Box } from "./Box";
 import { Row } from "./Row";
 import { connect } from "react-redux";
 import { AppState } from "../store";
-import { IGridState } from '../store/grid/types';
+import { IPiecesState } from '../store/pieces/types';
 import classNames from "classnames";
 import { Dispatch } from "redux";
-import { setSelectedPiece, movePiece } from '../store/grid/actions';
+import { setSelectedPiece, movePiece } from '../store/pieces/actions';
 import { incrementLap } from '../store/game/actions';
 import { equals } from "ramda";
 import { Colors } from "../utils";
-import "./Grid.css";
 import { IGameState } from '../store/game/types';
-
-const coordinateX = ["a", "b", "c", "d", "e", "f", "g", "h"];
-const coordinateY = [8, 7, 6, 5, 4, 3, 2, 1];
+import { BoxColumn } from "../store/grid/types";
 
 interface IStateProps {
-    grid: IGridState;
+    piecesState: IPiecesState;
     game: IGameState;
+    boxes: BoxColumn;
 }
 
 interface IDispatchProps {
@@ -31,15 +29,17 @@ interface IDispatchProps {
 
 type Props = IStateProps & IDispatchProps;
 
-export function Grid({ grid, dispatch, setSelectedPiece, game, movePiece }: Props) {
-    const { pieces, possibleTarget, selectedPiece } = grid;
+export function Grid({ piecesState, dispatch, setSelectedPiece, boxes, movePiece }: Props) {
+    const { pieces, possibleTarget, selectedPiece } = piecesState;
 
-    console.log(game.lap);
-    console.log(possibleTarget);
+    console.log(boxes);
 
     return (
         <div className="grid">
-            {coordinateY.map((y, i) => {
+            {Object.values(boxes).map((item) => {
+                
+            })}
+            {/* {coordinateY.map((y, i) => {
                 const isYEven = isEven(i);
                 return (
                     <Row key={y}>
@@ -79,7 +79,7 @@ export function Grid({ grid, dispatch, setSelectedPiece, game, movePiece }: Prop
                             };
 
                             return (
-                                <Case
+                                <Box
                                     className={cssClass}
                                     key={`${x}${y}`}
                                     x={x}
@@ -91,15 +91,16 @@ export function Grid({ grid, dispatch, setSelectedPiece, game, movePiece }: Prop
                         })}
                     </Row>
                 );
-            })}
+            })} */}
         </div>
     );
 }
 
 function mapStateToProps(state: AppState): IStateProps {
     return {
-        grid: state.grid,
+        piecesState: state.pieces,
         game: state.game,
+        boxes: state.grid.boxes,
     };
 }
 
